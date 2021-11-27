@@ -55,6 +55,12 @@
     background-color: #f1f1f1;
     padding-left: 20px;
   }
+
+  /* create one main centered column to hold tableau embed */
+  .maincolumn {
+    width:100%;
+    background-color: #f1f1f1;
+  }
   
   /* Fake image */
   .fakeimg {
@@ -99,3 +105,4 @@
       float: none;
       width: 100%;
     }
+  }
