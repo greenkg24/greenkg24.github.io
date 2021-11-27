@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="resume.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
@@ -83,7 +84,62 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p>Additionally, fielding ad hoc requests and engaging with varying stakeholders to vet
 requirements, set expectations, provide a sensible timeline for release, and provide timely
 updates throughout the process are essential to be successful in this position.</p>
+          <!--Trigger/Open The Modal-->
           <button id='gh-btn'>Learn More</button>
+          <!--The Modal-->
+          <div id="myModal" class="modal">
+            
+            <!--Modal content-->
+            <div class='modal-content'>
+              <span class="close">&times;</span>
+              <!-- <h5 class="w3-opacity"><b>Senior Data Analyst / Guidehouse LLP</b></h5> -->
+              <p>
+                <strong>Technical skills utilized in this position includes:</strong>
+              </p>
+              <ul>
+                <li>Python, Javascript, & R</li>
+                <li>HTML, CSS & jQuery</li>
+                <li>Python Flask web development & application framework</li>
+                <li>Tableau Desktop, Server & Tableau Prep</li>
+                <li>SQL Developer and Oracle DB</li>
+                <li>WordPress Developer</li>
+                <li>Test driven development & DevSecOps</li>
+                <li>Visual Studio Code IDE</li>
+                <li>Anaconda development toolkit</li>
+                <li>Jira, Github & Git (bash)</li>
+                <li>Experience in ETL and Python data pipeline</li>
+              </ul>
+              <p>
+                <strong>Experience | Results | Impact</strong>
+              </p>
+              <p>
+                Assisted in the stand up of a brand-new business analytics unit for the client which later became 
+the exemplar for the whole organization as decided by the parent organization’s senior 
+leadership team. 
+              </p>
+              <p>
+                Developed local prototype web application as proof of concept (on own time) primarily utilizing 
+the Python programming language, relevant packages and libraries structured within the Python 
+Flask web development framework. This proved to the client what was possible and opened an 
+avenue for further development of ideas and other applications later, ultimately clearing the 
+path for more innovative solutions. 
+              </p>
+              <p>
+                Assisted in the initial development and continual improvement of a highly visible, enterprise 
+wide and comprehensive Tableau dashboard which measures the downstream impact of the 
+client’s main business outputs as it relates to its business activities. The completion of such was 
+the first of its kind and was hailed as “much needed!”, “finally!”, and “very impressive”. The 
+continual release of this production ready dashboard decreases lag time for decision making and 
+allows the visibility needed to course correct as business needs evolve.
+              </p>
+              <p>
+                Automated manually intensive business processes using Python’s wide variety of libraries and 
+                packages, including data collection, cleaning, processing & exporting for the client’s robust 
+                monthly reporting. One process was reduced from 1.5 - 3 days of manual work to under 30 
+                minutes using the custom Python application I developed and continually test. 
+              </p>
+            </div>
+          </div>
           <hr>
         </div>
         <div class="w3-container">
@@ -140,6 +196,34 @@ maintaining a 3.92 GPA and graduating Summa Cum Laude.</p>
   <a href='https://github.com/greenkg24'><i class="fa fa-github w3-hover-opacity"></i></a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("gh-btn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 
 </body>
 </html>
